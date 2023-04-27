@@ -82,6 +82,7 @@ Service             Package                                DSN
 `OrangeSms`_        ``symfony/orange-sms-notifier``        ``orange-sms://CLIENT_ID:CLIENT_SECRET@default?from=FROM&sender_name=SENDER_NAME``
 `OvhCloud`_         ``symfony/ovh-cloud-notifier``         ``ovhcloud://APPLICATION_KEY:APPLICATION_SECRET@default?consumer_key=CONSUMER_KEY&service_name=SERVICE_NAME``
 `Plivo`_            ``symfony/plivo-notifier``             ``plivo://AUTH_ID:AUTH_TOKEN@default?from=FROM``
+`Redlink`_          ``symfony/redlink-notifier``           ``redlink://API_KEY:APP_KEY@default?from=SENDER_NAME&version=API_VERSION``
 `RingCentral`_      ``symfony/ring-central-notifier``      ``ringcentral://API_TOKEN@default?from=FROM``
 `Sendberry`_        ``symfony/sendberry-notifier``         ``sendberry://USERNAME:PASSWORD@default?auth_key=AUTH_KEY&from=FROM``
 `Sendinblue`_       ``symfony/sendinblue-notifier``        ``sendinblue://API_KEY@default?sender=PHONE``
@@ -112,7 +113,7 @@ Service             Package                                DSN
 
 .. versionadded:: 6.3
 
-    The Bandwith, iSendPro, Plivo, RingCentral, SimpleTextin and Termii integrations
+    The Bandwith, iSendPro, Plivo, RingCentral, SimpleTextin, Termii and Redlink integrations
     were introduced in Symfony 6.3.
     The ``from`` option in ``Smsapi`` DSN is optional since Symfony 6.3.
 
@@ -1006,6 +1007,7 @@ is dispatched. Listeners receive a
 .. _`Plivo`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Notifier/Bridge/Plivo/README.md
 .. _`Pushover`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Notifier/Bridge/Pushover/README.md
 .. _`RFC 3986`: https://www.ietf.org/rfc/rfc3986.txt
+.. _`Redlink`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Notifier/Bridge/Redlink/README.md
 .. _`RingCentral`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Notifier/Bridge/RingCentral/README.md
 .. _`RocketChat`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Notifier/Bridge/RocketChat/README.md
 .. _`SMSFactor`: https://github.com/symfony/symfony/blob/{version}/src/Symfony/Component/Notifier/Bridge/SmsFactor/README.md
